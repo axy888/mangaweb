@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/347f2aece2.js" crossorigin="anonymous"></script>
+    
+    <title>ĐỀ ÁN</title>
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+      
+    
+      <link rel="stylesheet" href="css.css">
+      <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <script src="main.js"></script>
+      <script src="login.js"></script>
+      
+</head>
+<body>
+
+          <!-- slick -->
+          <script
+          type="text/javascript"
+          src="https://code.jquery.com/jquery-1.11.0.min.js"
+        >
+      
+      </script>
+        <script
+          type="text/javascript"
+          src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <!-- header -->
+    <div class="web">
+
+          <div class="search" >
+            <div class="wrapper">
+
+              <div class="search_input">
+                <input class="search_body" type="search" placeholder="Tìm Kiếm Truyện">
+
+                <div class="search_box search_box-js">
+                  <li class="sch_li">
+                    <a class="sch_a" href="">
+                      <img class="sch_img" src="" alt="">
+                        <div class="sch_hd"></div><br>
+                        <div class="sch_bd"></div>
+                    </a>
+                  </li>
+                </div>
+              </div>
+            <i onclick="searchUp()" class="fa-solid fa-chevron-up search_body1"></i>
+            </div>
+          </div>
+
+
+<div class="bb">
+
+  <header class="header">
+    <div class="grid ">
+      
+      <nav class="  header_navbar ">
+        
+        <ul class="header_navbar-list">
+          <li  class="header_nav-iteam "><a href="http://127.0.0.1:5500/index.html" class="header_navbar-iteam-link header_navbar-iteam-color "> <p class="color">TRANG CHỦ</p> </a></li>
+          <li  class="header_nav-iteam"><a href="#" class="header_navbar-iteam-link">CỘNG ĐỒNG</a> </li>
+          <li  class="header_nav-iteam "><a href="#" class="header_navbar-iteam-link">FANPAGE</a></li>
+        
+        </ul>
+        <ul class="header_navbar-list">
+          <h1 >CỨU TRUYỆN</h1>
+        </ul>
+        <ul class="header_navbar-list">
+
+           
+          <li onclick="search()"  class="header_nav-iteam "><i   class="  nav_search fa-solid fa-magnifying-glass"></i></li>
+          <li class="header_nav-iteam header_nav-iteam--stronng ">
+            <li onclick="log()" class="header_nav-iteam header_nav-iteam--stronng">Đăng Ký</li>
+          </li>
+          <li onclick="loggin()" class="header_nav-iteam header_nav-iteam--stronng">Đăng Nhập</li>
+        </ul>
+        
+  
+    </nav>
+  </header>
+    <section class="body">
+       <div class="body__canvas-list">
+          <div class="body__canvas">
+            <canvas id="myCanvas1" width="1283px" height="593px" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;">
+              <img id="img1" src="https://storage-bravo.cuutruyen.net/file/cuutruyen/uploads/manga/156/panorama/processed-c92ee2d97f94e2010286751b24e613b1.jpg" alt="">
+            </canvas>
+              <div class="body__canvas-item">
+                  <div class="body__canvas-item-header"><h3>My Hero Academy(FULL HD)</h3></div>
+                  <div class="body__canvas-item-body">
+                    <p>Câu truyện kể về hành trình Deku trở thành 1 anh hùng tuyệt vời nhất <br>Hãy theo dõi chặn đường anh hùng của cậu nhóc ấy tại đậy </p>
+                    <a class="body__canvas-item-body-link" onclick="getItem(1)">XEM THÔNG TIN</a>
+                  </div>
+              </div>
+              
+          </div>
+          <div class="body__canvas"><canvas id="myCanvas2" width="1283px" height="593px" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;"> 
+            <img id="img2" src="https://storage-bravo.cuutruyen.net/file/cuutruyen/uploads/manga/106/panorama/processed-6157f65727dc1341f11eef104aa64448.jpg" alt=""> 
+          </canvas>
+          <div class="body__canvas-item">
+            <div class="body__canvas-item-header"><h3>Sakamoto Days(FULL HD)</h3></div>
+            <div class="body__canvas-item-body">
+              <p>Sakamoto-chủ cửa hành hàng xóm thực sự là một cựu <br> sát thủ huyền thoại giấu nghề đó bà con </p>
+              <a class="body__canvas-item-body-link" onclick="getItem(11)">XEM THÔNG TIN</a>
+            </div>
+        </div>
+        </div>
+          <div class="body__canvas"><canvas id="myCanvas3" width="1283px" height="593px" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;">
+            <img id="img3" src="https://storage-bravo.cuutruyen.net/file/cuutruyen/uploads/manga/163/panorama/processed-9a8ff463a2c071c5d18fb9a33380f023.jpg" alt="">
+          </canvas>
+          <div class="body__canvas-item">
+            <div class="body__canvas-item-header"><h3>Gửi em, người bất tử(FULL HD)</h3></div>
+            <div class="body__canvas-item-body">
+              <p>"nó" bị bỏ rơi lạc lõng một mình trên bề mặt.Lang thang<br>khắp chốn,"nó" tìm đến cậu bé sống cô độc giữa cơn bão tuyết </p>
+              <a class="body__canvas-item-body-link" onclick="getItem(12)">XEM THÔNG TIN</a>
+            </div>
+        </div>
+        </div>
+          <div class="body__canvas"><canvas id="myCanvas4" width="1283px" height="593px" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;">
+            <img id="img4" src="https://storage-bravo.cuutruyen.net/file/cuutruyen/uploads/manga/482/panorama/processed-f185665dcb431c7567e96e288fe3f201.jpg" alt="">
+          </canvas>
+          <div class="body__canvas-item">
+            <div class="body__canvas-item-header"><h3>Blue Box(FULL HD)</h3></div>
+            <div class="body__canvas-item-body">
+              <p>vào một ngày mùa xuân,mối quan hệ của họ có một bước ngoặc lớn... <br>Và do đó bắt đầu chuỗi tình yêu,thể thao và tuổi trẻ hoàn toàn mới</p>
+              <a class="body__canvas-item-body-link" onclick="getItem(9)">XEM THÔNG TIN</a>
+            </div>
+        </div>
+        </div>
+  
+       </div>
+    </section>
+  
+</div>
+
+
+
+        <!-- mới cập nhật -->
+          <section class="body__update">
+              <div class="body__update-form">
+                  <div class="body__update-header">
+                    <h2>Mới cập nhật</h2>
+                  </div>
+                  <div id="container"> 
+                  <div class="body__update-list">
+             
+                    
+                          <div class="body_update-list" >
+                            <a onclick="getItem(1)"  style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="body_update-img" >
+                              <img class="img" src="img/mha_img.jpg" alt="">
+                            </a>
+                            <a class="body_update-type " href="#"><h3>Học Viện Anh Hùng</h3></a>
+                          </div>
+                          <div class="body_update-list" >
+                            <a onclick="getItem(2)" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="body_update-img" >
+                              <img class="img" src="img/chain_img.jpg" alt="">
+                            </a>
+                            <a class="body_update-type " href="#"><h3>Chainsaw Main</h3></a>
+                        </div>
+                        <div class="body_update-list" >
+                          <a onclick="getItem(3)"  style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="body_update-img" href="#">
+                            <img class="img" src="/img/img_spy.jpg" alt=""> 
+                          </a>
+                          <a class="body_update-type " href="#"><h3>Spy X Family</h3></a>
+                        </div>
+                        <div class="body_update-list" >
+                            <a onclick="getItem(5)"  style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="body_update-img" >
+                              <img class="img" src="/img/image_processing20221130-7-1rdpc23.jpg" alt="">
+                            </a>
+                            <a class="body_update-type " href="#"><h3>Kanojo Okarishimaru</h3></a>
+                        </div>
+                        <div class="body_update-list" >
+                          <a onclick="getItem(6)" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="body_update-img" href="#">
+                            <img class="img" src="/img/cute_img.jpg" alt="">
+                          </a>
+                          <a class="body_update-type " href="#"><h3>A cute Girl</h3></a>
+                      </div>
+                      <div class="body_update-list" >
+                        <a onclick="getItem(7)" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="body_update-img" href="#">
+                          <img class="img" src="/img/red_img.jpg" alt="">
+                        </a>
+                        <a class="body_update-type " href="#"><h3>Red Storm</h3></a>
+                    </div>
+                  <div class="body_update-list" >
+                    <a onclick="getItem(8)" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="body_update-img" href="#">
+                      <img class="img" src="/img/eng_img.jpg" alt="">
+                    </a>
+                    <a class="body_update-type " href="#"><h3>Engage Kiss</h3></a>
+                </div>
+                <div class="body_update-list" >
+                  <a  onclick="getItem(4)" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="body_update-img" href="#">
+                    <img class="img" src="/img/jj_img.jpg" alt="">
+                  </a>
+                  <a class="body_update-type " href="#"><h3>Jujutsu Kaisen</h3></a>
+              </div>
+                    </div>
+                        
+                  </div>
+              </div>
+          </section>
+
+
+<!-- truyện nổi bật -->
+
+          <section class="body-ft"> 
+          <div class="body-featured">
+              <h2 class="body-featured-header">
+                Truyện nổi bật
+              </h2>
+              <div class="body-arrow">
+                <i  onclick="prev()" class=" body-featured-prive fa-solid fa-arrow-left"></i>
+                <i onclick="next()" class=" body-featured-next  fa-solid fa-arrow-right"></i>
+              </div>
+              <div class="body-featured-body">
+
+                  <div class="body-featured-body_list">
+                      <div class="main">
+                          <div class="body-featured-list">
+                            <div class="body-featured-body_img">
+                              <img  src="img/chain_img.jpg" alt="" class="body-featured__img">
+                             <a onclick="getItem(2)" class="body-featured-body_des">Chainsaw Man (FULL HD)</a>
+                              <span class="body-featured-body_span"> CHƯƠNG 10</span>
+                            </div>
+                            <div class="body-featured-body_img">
+                              <img  src="img/mha_img.jpg" alt="" class="body-featured__img">
+                              <a  onclick="getItem(1)" class="body-featured-body_des">My Hero Academy (FULL HD)</a>
+                              <span class="body-featured-body_span"> CHƯƠNG 10</span>
+                            </div>
+                            <div class="body-featured-body_img">
+                              <img  src="img/jj_img.jpg" alt="" class="body-featured__img">
+                                <a onclick="getItem(4)" class="body-featured-body_des">Jujutsu Kaisen (FULL HD)</a>
+                              <span class="body-featured-body_span"> CHƯƠNG 10</span>
+                            </div>
+                          </div>
+                          <div class="body-featured-list">
+                            <div class="body-featured-body_img">
+                              <img  src="/img/img_spy.jpg" alt="" class="body-featured__img">
+                                <a onclick="getItem(3)" class="body-featured-body_des">SPY x Famyly (FULL HD)</a>
+                              <span class="body-featured-body_span"> CHƯƠNG 5</span>
+                            </div>
+                            <div class="body-featured-body_img">
+                              <img  src="/img/skm_img.jpg" alt="" class="body-featured__img">
+                                <a onclick="getItem(11)" class="body-featured-body_des">SakamoTo Days(FULL HD)</a>
+                              <span class="body-featured-body_span"> CHƯƠNG 10</span>
+                            </div>
+                            <div class="body-featured-body_img">
+                              <img  src="/img/gne_img.jpg" alt="" class="body-featured__img">
+                                <a onclick="getItem(12)" class="body-featured-body_des">Gửi Em ,Người Bất Tử (FULL HD)</a>
+                              <span class="body-featured-body_span"> CHƯƠNG 10</span>
+                            </div>
+                          </div>
+                          <div class="body-featured-list">
+                            <div class="body-featured-body_img">
+                              <img  src="/img/bluebox_img.jpg" alt="" class="body-featured__img">
+                                <a onclick="getItem(9)" class="body-featured-body_des">BLUE BOX,Kouchi(FULL HD)</a>
+                                <span class="body-featured-body_span"> CHƯƠNG 10</span>
+                            </div>
+                            <div class="body-featured-body_img">
+                              <img  src="/img/redcord_img.jpg" alt="" class="body-featured__img">
+                                <a onclick="getItem(10)" class="body-featured-body_des">Record RagNaRok (FULL HD)</a>
+                              <span class="body-featured-body_span"> CHƯƠNG 10</span>
+                            </div>
+                            <div class="body-featured-body_img">
+                              <img  src="/img/cute_img.jpg " alt="" class="body-featured__img">
+                                <a onclick="getItem(6)" class="body-featured-body_des">A CUTE GIRL(FULL HD)</a>
+                              <span class="body-featured-body_span"> CHƯƠNG 1</span>
+                            </div>
+                          </div>
+                          <div class="body-featured-list">
+                            <div class="body-featured-body_img">
+                              <img  src="/img/image_processing20221130-7-1rdpc23.jpg" alt="" class="body-featured__img">
+                                <a onclick="getItem(5)" class="body-featured-body_des">Kanojo,Okarisshimaru (FULL HD)</a>
+                              <span class="body-featured-body_span"> CHƯƠNG 1</span>
+                            </div>
+                            <div class="body-featured-body_img">
+                              <img  src="/img/red_img.jpg" alt="" class="body-featured__img">
+                                <a onclick="getItem(7)" class="body-featured-body_des">RED STORM (FULL HD)</a>
+                              <span class="body-featured-body_span"> CHƯƠNG 2</span>
+                            </div>
+                            <div class="body-featured-body_img">
+                              <img  src="/img/eng_img.jpg" alt="" class="body-featured__img">
+                                <a onclick="getItem(8)" class="body-featured-body_des">Engage Kiss (FULL HD)</a>
+                              <span class="body-featured-body_span"> CHƯƠNG 1</span>
+                            </div>
+                          </div>
+                       </div>
+                   </div>                        
+                </div>
+
+                   
+                  
+              
+           </div>
+          </section>
+
+          <!-- nhân vật được yêu thích -->
+          
+          <section class="body-figure">
+              <div class="body-figure_list">
+                  <div class="body-figure_header">
+                    <h2>Nhân Vật Yêu Thích </h2>
+                   
+                  </div>
+                  <div class="figure">
+                    
+                     <div class="figure1">
+                        <div class="figure_logo ">
+                              <img class="figure_img" src="https://i.pinimg.com/564x/78/2f/03/782f032235bd4b00c80de140b8e70538.jpg" alt="">
+                        </div>
+                        <div class="figure_dis">
+                          <button class="figrue-heart">
+                            <i class="fa-solid fa-heart"></i>
+                          </button>
+                            <p class="figure_dis-p ">MONNDKEY.D.LUFFY</p>
+                            <span class="figure_dis-span">One Piece</span>
+                        </div>
+
+                     </div>
+                     <div class="figure2">
+                      <div class=" figure_logo1 ">
+                            <img class="figure_img" src="https://image.lag.vn/upload/news/22/06/28/spy-x-family-anya-1_SQKR.jpeg" alt="">
+                      </div>
+                      <div class="figure_dis">
+                        <button class="figrue-heart figrue-heart1">
+                          <i class="fa-solid fa-heart"></i>
+                        </button>
+                        
+                          <p class="figure_dis-p figure_dis-p1">ANYA FORGER</p>
+                          <span class="figure_dis-span figure_dis-span1 ">SPY x Family</span>
+                      </div>
+                        
+                 </div>
+                     <div class="figure3">
+                       <div class=" figure_logo3 ">
+                              <img class="figure_img" src="https://i.ex-cdn.com/mgn.vn/files/content/2022/10/20/makima-1950.jpg" alt="">
+                        </div>
+                        <div class="figure_dis">
+                          <button class="figrue-heart figrue-heart2">
+                            <i class="fa-solid fa-heart"></i>
+                          </button>
+                        
+                            <p class="figure_dis-p figure_dis-p3">MAKIMA</p>
+                            <span class="figure_dis-span figure_dis-span3 ">Chainsaw Main</span>
+                        </div>
+                     </div>
+
+                  </div>
+              </div>
+          </section>
+
+          <!-- phần kết thúc -->
+          <footer class="end">
+            <h4 class="end-h4">Contact for work, copyright and more: </h4>
+            <p class="end-p">
+              liên hệ : <span class="end-span">huungm19@gmail.com</span> <br>
+              <br>
+              Điều khoản sử dụng <br>
+              Chính sách bảo mật <br>
+              <br>
+              &copy; 2022 cuutruyen.net </p>
+            </footer>
+         
+          <!-- modal -->
+
+
+         <div class="modal">
+            <div onclick="comeBack()"  class="modal_overlay">
+  
+            </div>
+            <div class="modal_body">
+            
+               
+                      <div class="auth-from">
+                          <div class="auth-form__container">
+                          <div class="auth-from__header">
+                              <h3 class="auth-from__heading "> Đăng Ký </h3>
+                              <span onclick="login()" class="auth-form__switch-btn"> Đăng Nhập</span>
+                          </div>
+                          <div class="auth-form__group">
+                            <input id="username" type="text" class="auth-form__input" placeholder="User Name" />
+                          </div>
+                          <div class="auth-form__group">
+                            <input id="email" type="text" class="auth-form__input" placeholder="Email" /> 
+                        </div>
+                        <div class="auth-form__group">
+                          <input id="password" type="password" class="auth-form__input" placeholder="Password" />
+                         </div>
+                         <div class="auth-form__group">
+                          <input id="confirmPassword" type="password" class="auth-form__input" placeholder="Confirm Password" />
+                        </div>
+                       
+                        <button onclick="createnewuser()" class="btn btn-signup">Sign Up</button>
+                         <div class="auth-form__aside"> 
+                              <p class="auth-form__policy-text">
+                                Bằng việc đăng ký ,bạn đã đồng ý với CuuTruyen về
+                                <a href="#" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                <a href="#" class="auth-form__text-link">Chính sách bảo mật</a>
+                              </p>
+                         </div>
+                         <div class="auth-form__control">
+                              <button onclick="comeBack()" class="btn btn--normal auth-form__controls-back">Trở Lại</button>
+                      
+                         </div>
+                          </div>
+  
+                         <div class="auth-form__socials">
+                              <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                <i class=" auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                                <span class="auth-form__socials--text">Kết nối với Facebook</span>
+                              </a>
+                              <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                                <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                                <span class="auth-form__socials--text">Kết nối với Google</span>
+                              </a>
+                         </div>
+                      </div>
+                                      
+                                        <div class="auth-from auth-form-login ">
+                                          <div class="auth-form__container">
+                                          <div class="auth-from__header">
+                                              <h3 class="auth-from__heading "> Đăng Nhập </h3>
+                                              <span onclick="auth()" class="auth-form__switch-btn">  Đăng Ký</span>
+                                          </div>
+                                          <div class="auth-form__group">
+                                             <input id="username1" type="text" class="auth-form__input" placeholder="User Name" />
+
+                                            <div class="auth-form__group">
+                                          <input  id="password1" type="password"  class="auth-form__input" placeholder="Password" />
+                                        </div>
+                                  
+                                        <div class="auth-form__aiside">
+                                            <div class="auth-form__help">
+                                                <a href="" class="auth-form__link auth-form-forget">Quên Mật Khẩu</a>
+                                                <span class="auth-form-taget"></span>
+                                                <a href="" class="auth-form__link"> Cần Trợ Giúp?</a>
+                                            </div>
+                                        </div>
+                                         <div class="auth-form__control">
+                                              <button onclick="comeBack()" class="btn btn--normal auth-form__controls-back">Trở Lại</button>
+                                              <button onclick ="loGin()"class="btn btn--main">Đăng nhập</button>
+                                         </div>
+                                          </div>
+                  
+                                         <div class="auth-form__socials">
+                                              <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                                <i class=" auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                                                <span class="auth-form__socials--text">Đăng nhập với Facebook</span>
+                                              </a>
+                                              <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                                                <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                                                <span class="auth-form__socials--text">Đăng nhập với Google</span>
+                                              </a>
+                                         </div>
+                                      </div>
+                      
+  
+      
+            </div>
+        </div>
+                   
+        <script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
+      <!-- <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+      <script src="/jquery.waypoints.min.js"></script> -->
+      <script src="slick.js"></script>
+      <script src="js.js"></script>
+      <script src="login.js"></script>
+   <script src="chuyenTrang.js"></script>
+   <script src="https://code.responsivevoice.org/responsivevoice.js?key=vZLmwJ0u"></script>
+</body>
+</html>
